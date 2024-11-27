@@ -1,7 +1,9 @@
 import React from 'react';
 import { Layout } from 'antd';
 const { Header } = Layout;
-const HeaderStyle: React.CSSProperties = {};
+const HeaderStyle: React.CSSProperties = {
+  
+};
 interface IHeaderProps {
   children?: React.ReactNode;
 }

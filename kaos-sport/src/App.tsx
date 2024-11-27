@@ -1,18 +1,17 @@
 import React from 'react';
 import './index.css';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-
-import { Base } from './components/templates/Base';
-
-const queryClient = new QueryClient();
+import Login from '@/pages/login/login';
+import LandingPage from '@/pages/LandingPage';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 const App: React.FC = () => {
   React.useEffect(() => {}, []);
   return (
-    <QueryClientProvider client={queryClient}>
-      <Base>abcd</Base>
-      <ReactQueryDevtools initialIsOpen />
-    </QueryClientProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/landing" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

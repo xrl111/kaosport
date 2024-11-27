@@ -1,5 +1,5 @@
 import React from 'react';
-import kaoSportLogo from '../../../assets/images/kao-sport-logo.png';
+import kaoSportLogo from '@/assets/kaosports.svg';
 
 const Logo: React.FC = () => {
   return (
